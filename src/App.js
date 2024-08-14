@@ -5,7 +5,9 @@ import Main from './components/Main';
 const DataContext = createContext();
 
 export default function App() {
+ 
   const [taskList, setTaskList] = useState(() => {
+
     // Retrieve taskList from localStorage if available, else set to an empty array
     const savedTasks = localStorage.getItem('taskList');
     return savedTasks ? JSON.parse(savedTasks) : [];

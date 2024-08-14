@@ -11,7 +11,7 @@ export default function Detail({ data, classn }) {
   return (
     <div className={`border-b ${borderColor} bg-white p-4 shadow-sm`}>
       <h3 className='text-xl'>{data}</h3>
-      <p>${total}</p>
+      <p>Rs.{total}</p>
       <p>data</p>
       {chartData.datasets.length>0  && < Doughnut data={chartData}/>}
   

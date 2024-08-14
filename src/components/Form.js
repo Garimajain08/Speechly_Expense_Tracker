@@ -16,6 +16,8 @@ export default function Form() {
     date: ''
   });
 
+  
+  
   // Destructure values from useSpeechRecognition hook
   const { transcript, resetTranscript, listening } = useSpeechRecognition();
 
